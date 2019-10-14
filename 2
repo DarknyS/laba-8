@@ -1,0 +1,22 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	double a, b, c;
+	cout << "Введите а,b,c" << endl;
+	cin >> a >> b >> c;
+	if (a < c && a < b) {
+		int k = b + c;
+		cout << "Сумма равна =" << k << endl;
+	}
+	if (c <a && c < b) {
+		int k = b + a;
+		cout << "Сумма равна =" << k << endl;
+	}if (b < c && b < a) {
+		int k = a + c;
+		cout << "Сумма равна =" << k << endl;
+	}
+}
