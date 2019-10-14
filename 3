@@ -1,0 +1,21 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	double ax, ay, bx, by, cx, cy;
+	cout << "Введите ax, ay, bx, by, cx, cy" << endl;
+	cin >> ax >> ay >> bx >> by >> cx >> cy;
+	double ab = sqrt(pow((bx - ax), 2) + pow((by - ay), 2));
+	double ac = sqrt(pow((cx - ax), 2) + pow((cy - ay), 2));
+	if (ab < ac) {
+		cout << "Точка В ближе к А" << endl;
+		cout << "Расстояние от В до А равно =" << ab << endl;
+	}
+	else {
+		cout << "Точка C ближе к А" << endl;
+		cout << "Расстояние от C до А равно =" << ac << endl;
+	}
+}
